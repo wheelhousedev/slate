@@ -1,11 +1,5 @@
 ---
-title: API Reference
-
-language_tabs: # must be one of https://git.io/vQNgJ
-  - shell
-  - ruby
-  - python
-  - javascript
+title: DEV-Ops - Dustin's Client Reference
 
 toc_footers:
   - <a href='#'>Sign Up for a Developer Key</a>
@@ -19,221 +13,264 @@ search: true
 
 # Introduction
 
-Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.
+Use this to quick-reference DEV-Ops and Support Documents of our clients.
 
-We have language bindings in Shell, Ruby, Python, and JavaScript! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
 
-This example API documentation page was created with [Slate](https://github.com/lord/slate). Feel free to edit it and use it as a base for your own API's documentation.
+# Orahealth SEO
 
-# Authentication
+### Support
+- Point: Natalie <natalie@wheelhousedmg.com>
+- Backup: Drew <drew@wheelhousedmg.com>
+- Strategist: Darla <darla@wheelhousedmg.com>
 
-> To authorize, use this code:
+### Tasks In Progress
 
-```ruby
-require 'kittn'
+- “Sample” Form to Excel Workflow - Dallas
 
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-```
+- Ongoing: Supporting Darla
 
-```python
-import kittn
+### Web Stack and DEV-Ops
 
-api = kittn.authorize('meowmeowmeow')
-```
+- **CMS**: Shopify
+- **Primary Domain**: https://www.oracoat.com/
+- **Other Domains:**: https://www.oracoat.eu/
+- **Code Control?**: No
+- **Access**: Lastpass -> CMS Accounts
 
-```shell
-# With shell, you can just pass the correct header with each request
-curl "api_endpoint_here"
-  -H "Authorization: meowmeowmeow"
-```
+### DEV Update Procedure
 
-```javascript
-const kittn = require('kittn');
+- Login to Shopify at https://www.oracoat.com/admin
+- Select "Online Store" in the menu
+- Select "Themes"
+- Duplicate "Theme 150" or current open theme.
+- Update .liquid files in Duplicated Theme.
+- Upon update approval, publish updated Theme.
 
-let api = kittn.authorize('meowmeowmeow');
-```
+### Notes
 
-> Make sure to replace `meowmeowmeow` with your API key.
+Due to the above there are a lot of old garbage templates in Oracoat. We've recommended that they prune these.
 
-Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our [developer portal](http://example.com/developers).
+# Project Rise Provider SEO
 
-Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:
+### Support
 
-`Authorization: meowmeowmeow`
+- Point: Aditya/Graham
+- Backup: Roy?
+- Strategist: Darla
 
-<aside class="notice">
-You must replace <code>meowmeowmeow</code> with your personal API key.
-</aside>
+### Tasks In Progress
 
-# Kittens
+- Project not started, no current context or DEV-Ops
 
-## Get All Kittens
+# Providence Sitecore 6 DEV
 
-```ruby
-require 'kittn'
+### Support
 
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-api.kittens.get
-```
+- Point: Graham
+- Backup: Drew
 
-```python
-import kittn
+### Tasks In Progress
 
-api = kittn.authorize('meowmeowmeow')
-api.kittens.get()
-```
+- CS-104 – Change Banner for Oregon - in CM, awaiting feedback or green light to deploy
+- CA-106 – Change Mobile Experience “Navigation” for Oregon - in CM, awaiting feedback or green light to deploy
+- COS-74 – Oregon Location Page Updates
 
-```shell
-curl "http://example.com/api/kittens"
-  -H "Authorization: meowmeowmeow"
-```
+### Notes
 
-```javascript
-const kittn = require('kittn');
+- Slack: We have slack channel #prov-sitecore - This has much of Guy’s team on it. @schooley and @Bhanu are our primary contacts.
 
-let api = kittn.authorize('meowmeowmeow');
-let kittens = api.kittens.get();
-```
+### Web Stack and DEV-Ops
 
-> The above command returns JSON structured like this:
+- **CMS**: Sitecore 6 (.NET)
+- **Primary Domain**: https://oregon.providence.org
+- **DEV Domains:**: 
+  - https://dev-oregon.providence.org/
+  - https://cm-oregon.providence.org/
+- **Code Control?**: Yes
+- **Repository**: https://bitbucket.org/medtouch/providence-oregon/branches/
+- **Repository Access**: Bitbucket Access granted to Dustin, Graham and Drew by <Jeremy.Kinser@providence.org>, requests for other access should go through Jeremy.
+- **RDP Access**: Personal Credentials emailed to Dustin, Graham and Drew from <Joseph.Schooley@providence.org> on Jan 10, 2019.
 
-```json
-[
-  {
-    "id": 1,
-    "name": "Fluffums",
-    "breed": "calico",
-    "fluffiness": 6,
-    "cuteness": 7
-  },
-  {
-    "id": 2,
-    "name": "Max",
-    "breed": "unknown",
-    "fluffiness": 5,
-    "cuteness": 10
-  }
-]
-```
-
-This endpoint retrieves all kittens.
-
-### HTTP Request
-
-`GET http://example.com/api/kittens`
-
-### Query Parameters
-
-Parameter | Default | Description
---------- | ------- | -----------
-include_cats | false | If set to true, the result will also include cats.
-available | true | If set to false, the result will include kittens that have already been adopted.
-
-<aside class="success">
-Remember — a happy kitten is an authenticated kitten!
-</aside>
-
-## Get a Specific Kitten
-
-```ruby
-require 'kittn'
-
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-api.kittens.get(2)
-```
-
-```python
-import kittn
-
-api = kittn.authorize('meowmeowmeow')
-api.kittens.get(2)
-```
+> Here are the connections you can now RDP into:
 
 ```shell
-curl "http://example.com/api/kittens/2"
-  -H "Authorization: meowmeowmeow"
+dev (WEB-SC-DEV): 104.42.55.216 #Sitecore files located at F:\inetpub\wwwroot\dev-oregon.providence.org\
+stage (WEB-SC-CM01): 104.42.74.29 #Sitecore files located at F:\inetpub\wwwroot\cm-oregon.providence.org\
+prod 1 (WEB-SC-CD01): 104.210.48.125
+prod 2 (WEB-SC-CD02): 104.42.46.44
+prod 3 (WEB-SC-CD03): 104.42.49.191
+prod 4 (WEB-SC-CD04): 104.42.195.182
 ```
+### DEV Update Procedure
+- Clone local repository
+- Create Feature Branch from Release
+- Make Code Updates
+- Copy and Paste to WEB-SC-DEV to view on dev-oregon.providence.org
+- Coordinate with Guy's team for release to CM
+- Guy to coordinate release to Prod
 
-```javascript
-const kittn = require('kittn');
+### Other Notes
 
-let api = kittn.authorize('meowmeowmeow');
-let max = api.kittens.get(2);
-```
+The repo does contain multiple sites. For now we are only supporting Oregon.
 
-> The above command returns JSON structured like this:
+# Robeez SEO
 
-```json
-{
-  "id": 2,
-  "name": "Max",
-  "breed": "unknown",
-  "fluffiness": 5,
-  "cuteness": 10
-}
-```
-
-This endpoint retrieves a specific kitten.
-
-<aside class="warning">Inside HTML code blocks like this one, you can't use Markdown, so use <code>&lt;code&gt;</code> blocks to denote code.</aside>
-
-### HTTP Request
-
-`GET http://example.com/kittens/<ID>`
-
-### URL Parameters
-
-Parameter | Description
---------- | -----------
-ID | The ID of the kitten to retrieve
-
-## Delete a Specific Kitten
-
-```ruby
-require 'kittn'
-
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-api.kittens.delete(2)
-```
-
-```python
-import kittn
-
-api = kittn.authorize('meowmeowmeow')
-api.kittens.delete(2)
-```
+> Install Stencil CLI
 
 ```shell
-curl "http://example.com/api/kittens/2"
-  -X DELETE
-  -H "Authorization: meowmeowmeow"
+$ npm install -g stencil-cli
 ```
 
-```javascript
-const kittn = require('kittn');
+> Install Support Libraries from Template
 
-let api = kittn.authorize('meowmeowmeow');
-let max = api.kittens.delete(2);
+```shell
+$ npm install
+```
+> Init Stencil (Robeez API Credentails in Lastpass shared with Natalie, Graham and Drew)
+
+```shell
+$ stencil init
 ```
 
-> The above command returns JSON structured like this:
+> Run Stencil CLI
 
-```json
-{
-  "id": 2,
-  "deleted" : ":("
-}
+```shell
+$ stencil start
+
+-------------------------------------------------
+
+[Browsersync] Proxying: http://localhost:3001
+[Browsersync] Access URLs:
+ ---------------------------------------
+       Local: http://localhost:3000
+    External: http://192.168.30.189:3000
+ ---------------------------------------
+          UI: http://localhost:3002
+ UI External: http://192.168.30.189:3002
+ ---------------------------------------
+[Browsersync] Watching files...
 ```
 
-This endpoint deletes a specific kitten.
+>Push Template to Big Commerce
 
-### HTTP Request
+```shell
+$ stencil push
+```
 
-`DELETE http://example.com/kittens/<ID>`
+### Support
 
-### URL Parameters
+- Point: Natalie
+- Backup: Graham, Drew
 
-Parameter | Description
---------- | -----------
-ID | The ID of the kitten to delete
+### Tasks In Progress
+
+- Parameters in Pagination Tags
+
+### Web Stack and DEV-Ops
+
+- **CMS**: Bigcommerce
+- **CMS Access**: Etana is an admin and can invite any needed. 
+- **Hosting** - BigCommerce
+- **Primary Domain**: https://www.robeez.com
+- **International Domain**: https://www.robeez.ca/
+- **Code Control?**: Depricated
+- **Why Depricated?**: Client makes many independent updates, code-control is always out of date. Always better to pull current theme from server.
+
+### DEV Update Procedure
+
+- Login to bigcommerce
+- Navigate to Storefront -> My Themese
+- Advanced -> Download Current Theme
+- Navigiate to Download, Install and Run Stencil CLI.
+- You should now be able to develop locally
+- When development is complete you can bundle or push the changes to BigCommerce
+- Other Documentation: [Stencil CLI Docs](https://developer.bigcommerce.com/stencil-docs)
+
+# Evergreen SEO
+- Point: Natalie
+- Backup: Drew
+
+### Tasks In Progress
+
+- Chatbot for Wordpress (Scoping)
+
+### Web Stack and DEV-Ops
+
+- **CMS**: Wordpress
+- **CMS Access**: Lastpass CMS Accounts
+- **Hosting** - Unknown
+- **Primary Domain**: [https://www.theevergreenmarket.com](https://www.theevergreenmarket.com)
+- **Code Control?**: Depricated
+- **Why Depricated?**: We do not currently have an engagement, code control and stack are out of date.
+
+### DEV Update Procedure
+
+- Attempt to make updates through wordpress pagebuilder
+- Update child-theme directly after taking backups (Not currently supported by DEV-Ops)
+
+# The Met Store Blog SEO
+
+-Point: Natalie
+-Backup: Dallas, Drew
+
+### Tasks In Progress
+
+- Wordpress Update
+- DEV-Ops handoff
+- Otherwise we do not have an engagment, but setup their new AWS Hosting
+
+### Web Stack and DEV-Ops
+
+- **CMS**: Wordpress
+- **CMS Access**: Lastpass CMS Accounts
+- **Hosting** - AWS - We Setup
+- **Primary Domain**: [https://www.metstoreblog.org](https://www.metstoreblog.org)
+- **Code Control?**: Depricated
+- **Why Depricated?**: We do not currently have an engagement, code control and stack are out of date.
+
+# Trident DEV Migration to Wordpress
+
+### Point: Natalie
+
+### Backup: Drew & Graham
+
+### In Progress:
+
+- Project is essentially being handed off to CE and Nat
+
+### DEV-Ops: In Progress
+
+# Trident SEO
+
+### Point: Graham
+
+### Backup: Natalie
+
+### InProgress:
+
+- [ ] WAP landing page updates - Should be done Fri-5th
+
+- [ ] Recipe page layout changes
+
+# NIST Prospecting Engine
+
+### Point: Liz
+
+### Backup: Roy, Graham, Dallas
+
+### In Progress:
+
+- [ ] End to End Automation, DB Refactoring
+
+- [ ] Backlog Grooming Next Steps
+
+# Crowsnest
+
+### Point: Johnathn
+
+### Backup: Paul, Drew
+
+### DEV-Ops
+
+- [ ] SSL Cert needs to be removed.
 
