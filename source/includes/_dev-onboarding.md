@@ -29,6 +29,8 @@ Use these docs to get started supporting Trident Seafoods on Wordpress
 ### Getting Started
 
  - **Docker** - Developing for Trident wordpress currently requires Docker. [Please install it from here](https://www.docker.com/products/docker-desktop) if you haven't already.
+    - For Windows users: [give up :|](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+    - [JK, use this guide](https://nickjanetakis.com/blog/setting-up-docker-for-windows-and-wsl-to-work-flawlessly)
  - **Environment** - Trident uses a shared database, in order to access it we'll need to get the environment from Lastpass. Note name: **Trident Wordpress Local Dev Environment Variables**
  - **Run Docker** - Use the "local-deploy-mount.sh" script to run the docker image. (May need to run multiple times, should see "Starting Nginx.." as last command)
  - **Access the Site** - You should be able to access it now on http://localhost/

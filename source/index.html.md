@@ -9,4 +9,5 @@ search: true
 includes:
  - introduction
  - dev-onboarding
+ - database
 ---
