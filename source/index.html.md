@@ -1,8 +1,8 @@
 ---
-title: DEV-Ops - Dustin's Client Reference
+title: Wheelhouse Documentation Boilerplate
 
 toc_footers:
-  - <p>Call Dustin for emergencies:<br/> 360.941.1180</p>
+  - <p>Add footer items here</p>
 
 search: true
 

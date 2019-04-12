@@ -12,7 +12,7 @@ This is a boilerplate for WH documentation.
 Use the example below to create new file under .includes/_filename.md
 Add the filename into your index.html.md files
 
----
+Forked from [Slate](https://spectrum.chat/slate):
 
 > Code Example Header
 
@@ -35,4 +35,4 @@ Paragraph
 - bullets
 - bullets
 
-Slate supports Markdown: [https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+Slate supports Markdown: [https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)git 
