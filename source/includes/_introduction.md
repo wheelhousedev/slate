@@ -1,36 +1,38 @@
 # Introduction
 
-This document is to support coverage while Dustin is out on Paternaty-Leave. On the whole this document should cover the who, what and when of all the active projects while I'm out. That said, a lot of what I do at Wheelhouse is answer questions. It will take a team effort to ensure not any one person is bearing the brunt of Q & A. Also, please reach out with any high risk issues or problems. I'd rather take time between diapers to answer questions rather than have everyone stuck because I forgot something. :-)
+> Get Started
 
-Here is a Quick list of the people you should check with First:
+```shell
+$ git clone https://github.com/wheelhousedev/slate.git
+$ git checkout -b docs/project-name
+```
 
-- CE Team
+This is a boilerplate for WH documentation.
 
-I recommend checking with Johnathn, Liz or Sheila as they often have context on all things, but below are the people who should be able to help.
+Use the example below to create new file under .includes/_filename.md
+Add the filename into your index.html.md files
 
-- OraHealth
-    - Point: Natalie
-    - Backup: Graham, Dallas
-- Project Rise Benchmark Scoring
-    - Point: Drew
-    - Backup: Aditya/Graham
-- Providences Sitecore
-    - Point: Graham, Sheila
-    - Backup: Drew
-- Robeez
-    - Point: Natalie
-    - Backup: Graham
-- Evergreen
-    - Point: Natalie, Shawn
-    - Backup: Drew, Graham
-- The Met Store Blog
-    - Point: Drew
-    - Backup: Graham
-- Trident Kentico Migration:
-    - Point: Natalie, Sheila
-    - Backup: Graham/Drew
-- NIST:
-    - Point: Liz, Roy
-    - Backup: Aditya, Graham, Dallas
-- Resource Planning Tool (Crowsnest)
-    - Point: Johnathn, Drew
+---
+
+> Code Example Header
+
+```javascript
+//Documentation is cool
+const example = "Hello Wheelhouse!";
+alert(example);
+```
+
+# H1 - New Section
+
+## H2 - Sub Section
+
+### H3 - Header
+
+#### H4 - Small Header
+
+Paragraph
+
+- bullets
+- bullets
+
+Slate supports Markdown: [https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
