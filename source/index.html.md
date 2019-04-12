@@ -2,10 +2,11 @@
 title: Wheelhouse Documentation Boilerplate
 
 toc_footers:
-  - <p>Add footer items here</p>
+  - <p>Copyright &copy; 2019 Wheelhouse DMG</p>
 
 search: true
 
 includes:
  - introduction
+ - dev-onboarding
 ---
