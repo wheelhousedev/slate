@@ -4,6 +4,15 @@ This document is to support coverage while Dustin is out on Paternaty-Leave. On 
 
 Here is a Quick list of the people you should check with First:
 
+**Authenticator**: My phone acts as MFA for the root account for __Biolife AWS__. You'll have to call/text for a code if you need Root access.
+
+**Leave Dates**: 
+- 04/16/2019 - 05/17/2019 I will be completely off (except for emergencies/interviews please)
+- Week of 05/20/2019 I will be back half-time partly remote to get ack into the swing of things.
+- Week of 05/27/2019 Back full-time.
+
+**Person Quick-Reference**:
+
 - CE Team
 
 I recommend checking with Johnathn, Liz or Sheila as they often have context on all things, but below are the people who should be able to help.
